@@ -1,0 +1,213 @@
+import React, { Component } from 'react'
+
+export const DataContext = React.createContext();
+
+export class DataProvider extends Component {
+
+    state = {
+        products: [
+            {
+                "_id": "1",
+                "title": "Nike Air Zoom Pegasus 36",
+                "src": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/1315882/air-zoom-pegasus-36-mens-running-shoe-wide-D24Mcz-removebg-preview.png",
+                "description": "The iconic Nike Air Zoom Pegasus 36 offers more cooling. A slimmer heel collar and tongue reduce bulk, while exposed cables give you a snug fit at higher speeds.",
+               
+                "price": 108.97,
+                "colors": "#e1e7ed",
+                "count": 1
+                
+            },
+            {
+                "_id": "2",
+                "title": "Nike Air Zoom Pega Shield",
+                "src": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/1315882/air-zoom-pegasus-36-shield-mens-running-shoe-24FBGb__1_-removebg-preview.png",
+                "description": "The Nike Air Zoom Pegasus 36 Shield gets updated to conquer wet routes. A water-repellent upper combines with an outsole that helps create grip on wet surfaces, letting you run in confidence despite the weather.",
+               
+                "price": 89.97,
+                "colors": "#4D317F",
+                "count": 1
+                
+            },
+            {
+                "_id": "3",
+                "title": "Nike Air Zoom CruzrOne",
+                "src": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/1315882/cruzrone-unisex-shoe-T2rRwS-removebg-preview.png",
+                "description": "Designed for steady, easy-paced movement, the Nike CruzrOne keeps you going. Its rocker-shaped sole and plush, lightweight cushioning let you move naturally and comfortably. The padded collar is lined with soft wool, adding luxury to every step, while mesh details let your foot breathe. There’s no finish line—there’s only you, one step after the next.",
+               
+                "price": 100.97,
+                "colors": "#E8D026",
+                "count": 1
+               
+            },
+            {
+                "_id": "4",
+                "title": "Nike Epic React Flyknit 2",
+                "src": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/1315882/epic-react-flyknit-2-mens-running-shoe-2S0Cn1-removebg-preview.png",
+                "description": "The Nike Epic React Flyknit 2 takes a step up from its predecessor with smooth, lightweight performance and a bold look. An updated Flyknit upper conforms to your foot with a minimal, supportive design. Underfoot, durable Nike React technology defies the odds by being both soft and responsive, for comfort that lasts as long as you can run.",
+               
+                "price": 89.97,
+                "colors": "#FD584A",
+                "count": 1
+               
+            },
+            {
+                "_id": "5",
+                "title": "Nike Odyssey React Flyknit 2",
+                "src": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/1315882/odyssey-react-flyknit-2-mens-running-shoe-T3VG7N-removebg-preview.png",
+                "description": "The Nike Odyssey React Flyknit 2 provides a strategic combination of lightweight Flyknit construction and synthetic material for support. Underfoot, Nike React cushioning delivers a soft, springy ride for a route that begs to be crushed.",
+               
+                "price": 71.97,
+                "colors": "#D4D7D6",
+                "count": 1
+               
+            },
+            {
+                "_id": "6",
+                "title": "Nike React Infinity Run Flyknit",
+                "src": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/1315882/react-infinity-run-flyknit-mens-running-shoe-RQ484B__2_-removebg-preview.png",
+                "description": "A pioneer in the running shoe frontier honors the original pioneer of running culture with the Nike React Infinity Run Flyknit. Blue Ribbon Track Club-inspired details pay homage to the haven that was created before running was even popular. This running shoe is designed to help reduce injury and keep you on the run. More foam and improved upper details provide a secure and cushioned feel.",
+               
+                "price": 160.0,
+                "colors": "#F2F5F4",
+                "count": 1
+               
+            },
+            {
+                "_id": "7",
+                "title": "Nike React Infinity Miler",
+                "src": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/1315882/react-miler-mens-running-shoe-DgF6nr-removebg-preview.png",
+                "description": "The Nike React Miler gives you trusted stability for miles with athlete-informed performance. Made for dependability on your long runs, its intuitive design offers a locked-in fit and a durable feel.",
+               
+                "price": 130.0,
+                "colors": "#22AFDC",
+                "count": 1
+                
+            },
+            {
+                "_id": "8",
+                "title": "Nike Renew Ride",
+                "src": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/1315882/renew-ride-mens-running-shoe-JkhdfR-removebg-preview.png",
+                "description": "The Nike Renew Ride helps keep the committed runner moving with plush cushioning. Firm support at the outsole helps you maintain stability no matter the distance.",
+               
+                "price": 130.0,
+                "colors": "#22AFDC",
+                "count": 1
+                
+            },
+            {
+                "_id": "9",
+                "title": "Nike Vaporfly 4% Flyknit",
+                "src": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/1315882/vaporfly-4-flyknit-running-shoe-v7G3FB-removebg-preview.png",
+                "description": "Built to meet the exacting needs of world-class marathoners, Nike Vaporfly 4% Flyknit is designed for record-breaking speed. The Flyknit upper delivers breathable support, while the responsive foam and full-length plate provide incredible energy return for all 26.2.",
+               
+                "price": 187.97,
+                "colors": "#3569A1",
+                "count": 1
+                
+            },
+            {
+                "_id": "10",
+                "title": "Nike Zoom Fly 3 Premium",
+                "src": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/1315882/zoom-fly-3-premium-mens-running-shoe-XhzpPH-removebg-preview.png",
+                "description": "Inspired by the Vaporfly, the Nike Zoom Fly 3 Premium gives distance runners race-day comfort and durability. The power of a carbon fiber plate keeps you in the running mile after mile.",
+               
+                "price": 160.0,
+                "colors": "#54D4C9",
+                "count": 1
+               
+            },
+        ],
+        cart: [],
+        total: 0
+        
+    };
+
+    addCart = (id) =>{
+        const {products, cart} = this.state;
+        const check = cart.every(item =>{
+            return item._id !== id
+        })
+        if(check){
+            const data = products.filter(product =>{
+                return product._id === id
+            })
+            this.setState({cart: [...cart,...data]})
+        }else{
+            alert("sản phẩm đã có trong giỏ hàng")
+        }
+    };
+
+    reduction = id =>{
+        const { cart } = this.state;
+        cart.forEach(item =>{
+            if(item._id === id){
+                item.count === 1 ? item.count = 1 : item.count -=1;
+            }
+        })
+        this.setState({cart: cart});
+        this.getTotal();
+    };
+
+    increase = id =>{
+        const { cart } = this.state;
+        cart.forEach(item =>{
+            if(item._id === id){
+                item.count += 1;
+            }
+        })
+        this.setState({cart: cart});
+        this.getTotal();
+    };
+
+    removeProduct = id =>{
+        if(window.confirm("Do you want to delete this product?")){
+            const {cart} = this.state;
+            cart.forEach((item, index) =>{
+                if(item._id === id){
+                    cart.splice(index, 1)
+                }
+            })
+            this.setState({cart: cart});
+            this.getTotal();
+        }
+       
+    };
+
+    getTotal = ()=>{
+        const{cart} = this.state;
+        const res = cart.reduce((prev, item) => {
+            return prev + (item.price * item.count);
+        },0)
+        this.setState({total: res})
+    };
+    
+    componentDidUpdate(){
+        localStorage.setItem('dataCart', JSON.stringify(this.state.cart))
+        localStorage.setItem('dataTotal', JSON.stringify(this.state.total))
+    };
+
+    componentDidMount(){
+        const dataCart = JSON.parse(localStorage.getItem('dataCart'));
+        if(dataCart !== null){
+            this.setState({cart: dataCart});
+        }
+        const dataTotal = JSON.parse(localStorage.getItem('dataTotal'));
+        if(dataTotal !== null){
+            this.setState({total: dataTotal});
+        }
+    }
+   
+
+    render() {
+        const {products, cart,total} = this.state;
+        const {addCart,reduction,increase,removeProduct,getTotal} = this;
+        return (
+            <DataContext.Provider 
+            value={{products, addCart, cart, reduction,increase,removeProduct,total,getTotal}}>
+                {this.props.children}
+            </DataContext.Provider>
+        )
+    }
+}
+
+
